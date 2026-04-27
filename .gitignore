@@ -1,0 +1,22 @@
+# LaTeX 编译生成的临时文件
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.out
+*.pdf
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 编辑器生成的文件
+*.swp
+*.swo
+*~
+*.presentation/

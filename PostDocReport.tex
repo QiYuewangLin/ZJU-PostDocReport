@@ -1,0 +1,133 @@
+\documentclass[notypeinfo,twoside,openright]{PostDocRep}
+% \usepackage[utf8]{inputenc}  % xelatex 下不需要，原生支持 UTF-8
+\usepackage{amsmath, amsthm, amssymb, booktabs, array, cases, graphicx, longtable,supertabular,multirow}
+\usepackage{xcolor}
+\usepackage{bookmark}
+\usepackage{threeparttable}
+\usepackage{subcaption} 
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{microtype}
+\usepackage[super]{gbt7714}
+\usepackage{placeins}
+% \usepackage[T1]{fontenc}  % xelatex 下不需要，会导致字体冲突
+\usepackage{fancyvrb} 
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+% 设置图形文件的搜索路径
+\graphicspath{{chapter/}{figures/}}
+
+% 取消链接的颜色
+\hypersetup{colorlinks=false}
+
+% 修改章的标题为英文格式
+%\CTEXsetup[name={Chapter~,}, number={\arabic{chapter}}]{chapter}
+
+% 小节标题靠左对齐
+\ctexset{
+  section = {
+    format+={\flushleft}
+  }
+}
+
+% 注意：在使用ctexbook的情况下，中文会自动使用宋体
+% 配置代码块：确保下划线等特殊字符正常显示
+\DefineVerbatimEnvironment{CodeBlock}{Verbatim}{%
+    fontfamily=ptm,  % Times New Roman for English and numbers
+    fontsize=\small,
+    frame=single,
+    framesep=2mm,
+    baselinestretch=1.0,
+    formatcom=\fontfamily{ptm}\selectfont,  % 确保使用Times New Roman
+    codes={\catcode`\_=12\catcode`\&=12\catcode`\$=12\catcode`\#=12\catcode`\^=12\catcode`\~=12\catcode`\%=12},  % 将特殊字符设为普通字符（12表示普通字符）
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  % 中文封面内容
+  % 请根据实际情况修改以下信息
+  \classification{分类号示例}
+  \confidential{公开}
+  \UDC{UDC编号示例}
+  \serialnumber{编号示例}
+  \school{浙~江~大~学}
+  \title[研究报告题目]{研究报告题目}
+  \author{作者姓名}
+  \workdate{20XX年X月}
+  \submitdate{20XX年X月}
+  \address{浙江大学（杭州）}
+  \englishtitle{Research Report Title \\(English Title)}
+  \major{流动站名称}
+  \submajor{专业名称}
+  \advisorent{企业导师姓名}
+  \advisorschool{学校导师姓名}
+  \institute{浙江大学XX学院}
+  \begindate{20XX年X月X日}
+  \ssdate{20XX年X月X日}
+
+  % 封面、题名页
+\maketitle
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前言部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+  % 摘要
+  \include{chapter/abstract}
+
+  % 目录
+  \pagenumbering{Roman} % 使用罗马数字
+  \fancyfoot[C]{\thepage}
+  \tableofcontents
+  \newpage
+  % 表格目录
+  \listoftables
+  % 插图目录
+  \listoffigures
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+\include{chapter/chap-intro}
+\include{chapter/chap-method}
+\include{chapter/chap-experiment}
+\include{chapter/chap-analysis}
+\include{chapter/chap-discussion}
+\include{chapter/chap-conclusion}
+% 致谢
+\include{chapter/thanks}
+
+% 参考文献
+% 使用 BibTeX（gbt7714宏包已自动设置样式）
+\bibliography{bib/tex}
+
+% 附录
+\appendix
+
+% \include{chapter/chap-req}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附件部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+% 发表文章目录
+\include{chapter/pub}
+
+% 个人简历
+\include{chapter/resume}
+
+
+
+\end{document}
