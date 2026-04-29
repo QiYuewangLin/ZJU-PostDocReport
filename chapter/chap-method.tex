@@ -118,12 +118,11 @@
 
 \subsection{多行公式}
 当公式较长需要分行时，可使用align环境。
-公式\ref{eq:multi_line}展示了多行公式的格式。
+公式\ref{eq:loss}和\ref{eq:gradient}公式展示了多行公式的格式。
 
 \begin{align}
     L &= \sum_{i=1}^{n} \left( y_i - \hat{y}_i \right)^2 \label{eq:loss} \\
     \frac{\partial L}{\partial w} &= \sum_{i=1}^{n} 2\left( y_i - \hat{y}_i \right) \frac{\partial \hat{y}_i}{\partial w} \label{eq:gradient}
-    \label{eq:multi_line}
 \end{align}
 
 \subsection{矩阵公式}

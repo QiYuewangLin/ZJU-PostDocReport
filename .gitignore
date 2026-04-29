@@ -10,6 +10,7 @@
 *.lof
 *.lot
 *.out
+*.xdv
 *.pdf
 # 操作系统生成的文件
 .DS_Store
