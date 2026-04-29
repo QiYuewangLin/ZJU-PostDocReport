@@ -1,21 +1,163 @@
-MIT License
+The LaTeX Project Public License
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-Copyright (c) 2026 OldLin
+LPPL Version 1.3c 2006-05-19
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright 2006 LaTeX3 Project
+    Everyone is allowed to distribute verbatim copies of this
+    license document, but modification of it is not allowed.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+PREAMBLE
+========
+
+The LaTeX Project Public License (LPPL) is the license under which
+the LaTeX base system and various other LaTeX packages are
+distributed.
+
+You may use this license for any program that you have written and
+wish to distribute.  This license may be particularly suitable if
+your program is a LaTeX package or a TeX-related program.  However,
+it may also be suitable for other kinds of programs.
+
+The LaTeX Project Public License gives you the freedom to distribute
+your program under the terms of this license or, at your option,
+under the terms of any later version of the LaTeX Project Public
+License which is published by the LaTeX3 Project.
+
+In order to use this license for your program you must ensure that
+your program (or a modified version of it) is a work "made in the
+context of the LaTeX Project".  This means that either:
+
+1. your program calls, or is called by, other LaTeX Project
+   programs; or
+
+2. your program interprets (or edits/changes/work with) files that
+   are (primarily) used by LaTeX Project programs; or
+
+3. your program is primarily intended for use with LaTeX Project
+   programs or with files that are (primarily) used by LaTeX Project
+   programs.
+
+A typical example of a program "made in the context of the LaTeX
+Project" is a package that is intended to be used with LaTeX (i.e.,
+with the program `latex' or with one of the LaTeX packages) or with
+a LaTeX document class.
+
+COPYRIGHT HOLDER
+================
+
+The LaTeX3 Project
+    (For a list of authors see the file `readme.txt' in the LaTeX
+    base distribution.)
+
+Permission is granted to distribute verbatim copies of this
+license document, but modification of it is not allowed.
+
+CONDITIONS ON DISTRIBUTION AND MODIFICATION
+===========================================
+
+1. Activities other than distribution and/or modification of the
+   Work are not covered by this license; they are outside its scope.
+   In particular, the act of running the Work is not restricted and
+   no requirement is made concerning any charges for running the
+   Work.
+
+2. You may distribute a complete, unmodified copy of the Work as
+   you received it.  Distribution of only part of the Work is not
+   allowed.  The only applicable constraints are those mentioned
+   above under `Copyright Holder'.
+
+3. You may distribute a modified copy of the Work under the
+   conditions mentioned in Clause 2 above provided that:
+
+   (a) you rename the modified files and/or the package containing
+       them such that the names are distinct from those of the
+       unmodified files and/or the package;
+
+   (b) you clearly indicate that the files and/or package have been
+       modified in the documentation of the Work; and
+
+   (c) you change the identification of the Work (see below) to
+       indicate that it is a modified version.
+
+   The name of the modified Work shall not be the same as that of
+   the unmodified Work.
+
+4. If you distribute a modified copy of the Work, you must at your
+   option either:
+
+   (a) distribute the modified Work together with instructions on
+       how to obtain an unmodified copy of the Work; or
+
+   (b) provide a prominent indication in the distribution of the
+       modified Work of the fact that it is modified and of the
+       instructions on how to obtain an unmodified copy.
+
+   The name of any Work that you distribute must be distinct from
+   the names of other versions of the Work.
+
+5. The Work includes the file `readme.txt' which must be
+   distributed with the Work.
+
+NO WARRANTY
+===========
+
+There is no warranty for the Work.  Except when otherwise stated in
+writing, the Copyright Holder provides the Work `as is', without
+warranty of any kind, either expressed or implied, including, but
+not limited to, the implied warranties of merchantability and
+fitness for a particular purpose.  The entire risk as to the
+quality and performance of the Work is with you.  Should the Work
+prove defective, you assume the cost of all necessary servicing,
+repair, or correction.
+
+In no event unless required by applicable law or agreed to in
+writing will The Copyright Holder, or any author named in the
+documentation of the Work, or any other party who may distribute
+and/or modify the Work as permitted above, be liable to you for
+damages, including any general, special, incidental or consequential
+damages arising out of any use of the Work or out of inability to
+use the Work (including but not limited to loss of data, data being
+rendered inaccurate, or losses sustained by anyone as a result of
+any failure of the Work to operate with any other programs), even
+if the holder or other party has been advised of the possibility of
+such damages.
+
+========================================
+END OF TERMS AND CONDITIONS FOR COPYING,
+DISTRIBUTION AND MODIFICATION
+========================================
+
+
+======================================================================
+
+For the LaTeX Project Public License version 1.3c 2006-05-19
+the "Current Maintainer" is defined as follows:
+
+The Current Maintainer of a Work is the individual or legal entity
+that is named in the Work as its Current Maintainer.
+
+If the Work has no Current Maintainer then the following holds:
+An individual or legal entity may become the Current Maintainer of
+the Work by announcing publicly that she, he, or it will maintain
+the Work.
+
+======================================================================
+
+This Work: PostDocReport - Zhejiang University Postdoctoral Research Report LaTeX Template
+
+Copyright (c) 2026 QiYuewangLin
+
+The Current Maintainer of this Work is QiYuewangLin.
+
+This Work consists of the files:
+  - PostDocReport.tex
+  - PostDocRep.cls
+  - PostDocRep.cfg
+  - gbt7714.sty
+  - gbt7714-*.bst
+  - chapter/*.tex
+  - figures/*
+  - bib/tex.bib
+  - README.md
